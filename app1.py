@@ -13,7 +13,7 @@ load_path = 'C:/Users/Lyonex/Desktop/Final Mini Project/credit_fraud_model1'
 # Function to load the model with caching
 @st.cache_resource
 def load_model(load_path):
-    clf_loaded = joblib.load(load_path)
+    clf_loaded = joblib.load(load_path) 
     return clf_loaded
 # Load the model from the file
 clf_loaded = load_model(load_path)
