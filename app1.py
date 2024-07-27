@@ -8,7 +8,6 @@ import os
 
 
 # Correct path to the model file
-# load_path = 'C:/Users/Lyonex/Desktop/Final Mini Project/credit_fraud_model1'
 load_path = 'credit_fraud_model1'
 
 # Function to load the model with caching
@@ -19,12 +18,16 @@ def load_model(load_path):
 # Load the model from the file
 clf_loaded = load_model(load_path)
 
-# Load the model from the file~!
+
+# Load the model from the file
+# clf_loaded = load(load_path)
 st.write(f"##### Model loaded successfully from *{load_path}*!")
 
 # Initialize counts
 fraudulent_count = 0
 legitimate_count = 0
+
+
 
 # Function to Predict transactions from CSV file
 def predict_transactions(df, clf_loaded):
@@ -71,9 +74,11 @@ def predict_transactions(df, clf_loaded):
         
             st.pyplot(fig1)
                 
+
         except Exception as e:
             st.error(f"An error occurred: {e}")
             st.error("File has not been read yet!")
+
 
 
 #SideBar
@@ -166,4 +171,6 @@ if show_data:
         st.error(f"Error reading file: {e}")
     
 if uploaded_file is None and show_data:
-    st.error("Please upload your **CSV file!** in the **Sidebar**. The file should include columns like 'V1' to 'V28' and 'Amount'.") 
+    st.error("Please upload your **CSV file!** in the **Sidebar**. The file should include columns like 'V1' to 'V28' and 'Amount'.")
+    
+    
