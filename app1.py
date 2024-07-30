@@ -19,10 +19,6 @@ def load_model(load_path):
 clf_loaded = load_model(load_path)
 
 
-# Load the model from the file
-# clf_loaded = load(load_path)
-st.write(f"##### Model loaded successfully from *{load_path}*!")
-
 # Initialize counts
 fraudulent_count = 0
 legitimate_count = 0
