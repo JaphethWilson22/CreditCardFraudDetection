@@ -49,6 +49,7 @@ streamlit run app1.py
 
 ## Contact
 - For any questions or support, please contact otcherehjapheth@gmail.com or elliotduku@gmail.com.
+- Project hosted on streamlit at lyonex-duku-frauddetection.streamlit.app
 
 ## Acknowledgements
 -Special thanks to all contributors and open-source projects that made this project possible.
